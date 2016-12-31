@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/b2_c"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_villain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.apc.punchvillain.SelectVillainActivity">
+    <FrameLayout
+        android:layout_marginTop="62dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/mirror_layout"
+            android:visibility="invisible"
+            android:background="@drawable/mirror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:weightSum="4"
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:background="@drawable/dialog_frame"
+                        android:text="相机"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:background="@drawable/dialog_frame"
+                        android:text="照片库"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/image_villain"
+                    android:visibility="invisible"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_frame_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mirror_frame"
+            android:background="@drawable/mirror_old_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ImageView>
+    </FrameLayout>
+
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:hint="输入此衰人的名字"
+        android:textColor="#EE0000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:background="@drawable/s_frame"
+        android:layout_width="186dp"
+        android:layout_height="59dp" />
+
+</LinearLayout>
