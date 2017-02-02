@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/activity_check_draw_lots"
+    android:background="@drawable/btn2_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.apc.punchvillain.CheckDrawLotsActivity">
+
+    <ImageView
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/title_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    <ImageView
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/title_half1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="您抽到了："
+            android:textStyle="bold"
+            android:textColor="#8B0000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/draw_TxtName"
+            android:layout_marginLeft="12dp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/title_half2"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <FrameLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:background="@drawable/draw_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/draw_show"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center_horizontal"
+            app:viewAspectRatio="0.72"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+</LinearLayout>

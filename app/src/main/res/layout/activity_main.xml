@@ -9,7 +9,7 @@
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
-    android:background="@drawable/b1_c_c"
+    android:background="@drawable/cover"
     tools:context="com.example.apc.punchvillain.MainActivity">
 
     <TextView

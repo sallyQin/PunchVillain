@@ -2,27 +2,41 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.apc.punchvillain">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SelectVillainActivity">
+        <activity android:name=".SelectVillainActivity"
+                  android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".SolutionSpellActivity"></activity>
+        <activity android:name=".SolutionSpellActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PunchVillainActivity"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name=".CheckDrawLotsActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".LotteryHomeActivity"
+                  android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

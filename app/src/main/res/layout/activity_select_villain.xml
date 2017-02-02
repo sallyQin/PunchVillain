@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/b2_c"
+    android:background="@drawable/btn1_bg"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_select_villain"
     android:layout_width="match_parent"
@@ -11,8 +12,22 @@
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     tools:context="com.example.apc.punchvillain.SelectVillainActivity">
+    <EditText
+        android:id="@+id/villainName_editTxt"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:textColorHint="#FFFFFF"
+        android:hint="输入此衰人的名字"
+        android:textColor="#EE0000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/s_frame"
+        android:layout_width="186dp"
+        android:layout_height="54dp" />
     <FrameLayout
-        android:layout_marginTop="62dp"
+        android:id="@+id/wholeFrame"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -20,64 +35,138 @@
             android:id="@+id/mirror_layout"
             android:visibility="invisible"
             android:background="@drawable/mirror"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
             <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
                 <LinearLayout
+                    android:id="@+id/content_choice"
                     android:orientation="vertical"
-                    android:weightSum="4"
-                    android:layout_marginBottom="12dp"
-                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal|top"
+                    android:weightSum="9"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginBottom="112dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent">
                     <TextView
-                        android:background="@drawable/dialog_frame"
+                        android:id="@+id/camera"
+                        android:background="@drawable/selector_content_choice"
+                        android:layout_marginBottom="2dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:gravity="center_vertical|left"
+                        android:layout_gravity="center_horizontal"
+                        android:drawableRight="@drawable/camera_icon"
                         android:text="相机"
-                        android:textSize="13sp"
+                        android:textSize="14sp"
                         android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:layout_width="match_parent"
+                        android:textColor="@color/selector_content_textcolor"
+                        android:layout_width="214dp"
                         android:layout_height="0dp"
-                        android:layout_weight="1"/>
+                        android:layout_weight="2"/>
                     <TextView
-                        android:background="@drawable/dialog_frame"
+                        android:id="@+id/gallery"
+                        android:background="@drawable/selector_content_choice"
+                        android:layout_marginBottom="2dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:gravity="center_vertical|left"
+                        android:layout_gravity="center_horizontal"
+                        android:drawableRight="@drawable/gallery_icon"
                         android:text="照片库"
-                        android:textSize="13sp"
+                        android:textSize="14sp"
                         android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:layout_width="match_parent"
+                        android:textColor="@color/selector_content_textcolor"
+                        android:layout_width="214dp"
                         android:layout_height="0dp"
-                        android:layout_weight="1"/>
-
+                        android:layout_weight="2"/>
+                    <TextView
+                        android:id="@+id/selfDefine"
+                        android:background="@drawable/selector_content_choice"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:gravity="center_vertical|left"
+                        android:layout_gravity="center_horizontal"
+                        android:drawableRight="@drawable/self_define_icon"
+                        android:text="系统默认图"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/selector_content_textcolor"
+                        android:layout_width="214dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"/>
+                    <TextView
+                        android:id="@+id/cancel"
+                        android:layout_marginTop="18dp"
+                        android:background="@drawable/selector_cancel_button"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal"
+                        android:text="取消"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#0A0A0A"
+                        android:layout_width="214dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"/>
                 </LinearLayout>
-                <ImageView
-                    android:id="@+id/image_villain"
-                    android:visibility="invisible"
-                    android:layout_margin="10dp"
-                    android:background="@drawable/round_frame_c"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                <FrameLayout
+                    android:id="@+id/show_villain"
+                    android:layout_marginTop="135dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/round_mirror"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/round_frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/image_villain"
+                        android:layout_gravity="center"
+                        app:roundAsCircle="true"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginBottom="22dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </FrameLayout>
+
             </FrameLayout>
         </LinearLayout>
 
         <ImageView
             android:id="@+id/mirror_frame"
-            android:background="@drawable/mirror_old_c"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:background="@drawable/mirror_with_word_co"
+            android:layout_width="match_parent"
+            android:layout_height="472dp">
         </ImageView>
     </FrameLayout>
-
-    <EditText
+    <LinearLayout
+        android:id="@+id/confirm_linerLayout"
+        android:visibility="invisible"
         android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:hint="输入此衰人的名字"
-        android:textColor="#EE0000"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:background="@drawable/s_frame"
-        android:layout_width="186dp"
-        android:layout_height="59dp" />
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_change_pic"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/selector_change_pic_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/button_punch_villain"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/selector_punch_villain_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
 </LinearLayout>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">打小人</string>
+    <string name="error_no_capture">未找到系统相机</string>
+    <string name="error_no_gallery">未找到系统相册</string>
 </resources>
