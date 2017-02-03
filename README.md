@@ -19,3 +19,7 @@
 5.模拟 附带走马灯效果的九宫格抽财神签（带音效）。
 
 
+![image](https://github.com/sallyQin/PunchVillain/app/src/main/res/raw/1.png)
+![image](https://github.com/sallyQin/PunchVillain/app/src/main/res/raw/2.png)
+![image](https://github.com/sallyQin/PunchVillain/app/src/main/res/raw/3.png)
+![image](https://github.com/sallyQin/PunchVillain/app/src/main/res/raw/4.png)
