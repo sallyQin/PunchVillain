@@ -22,11 +22,7 @@
 ![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/readme_display.gif)
 
 ![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/readme1.png)
-![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/readme2.png)
 ![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/readme3.png)
-
-![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/readme4.png)
-![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/readme5.png)
 ![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/readme6.png)
 
 
