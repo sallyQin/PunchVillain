@@ -19,7 +19,7 @@
 #####  5.模拟 九宫格抽财神签（附带`外圈小灯有走马灯效果`和 音效）。
 
 演示：
-![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/readme_display.jpg)
+![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/readme_display.gif)
 
 ![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/readme1.png)
 ![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/readme2.png)
