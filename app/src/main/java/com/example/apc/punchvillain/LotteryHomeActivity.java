@@ -62,7 +62,6 @@ public class LotteryHomeActivity extends Activity {   //九宫格抽奖“主界
 		//设置最多可容纳1个音频流，音频的品质为5
 		mSoundPool = new SoundPool(1, AudioManager.STREAM_SYSTEM, 5);
 		soundID.put(1, mSoundPool.load(this, R.raw.speed_dial, 1));
-		//soundID.put(2 , mSoundPool.load(this, R.raw.dirt, 1));
 	}
 
     @Override
