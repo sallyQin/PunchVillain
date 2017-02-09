@@ -11,7 +11,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Created by 1 on 2017/1/8.
+ * Created by Sally on 2017/1/8.
  */
     public class ProgressView extends View {  //进度条View
 
@@ -82,8 +82,9 @@ import android.view.View;
                 positions[positions.length-1] = 1.0f;
                 LinearGradient shader = new LinearGradient(3, 3, (mWidth-3)*section, mHeight-3, colors,null, Shader.TileMode.MIRROR);// LinearGradient：线型颜色渐变渲染
                 mPaint.setShader(shader); //设置渲染器
+                canvas.drawRoundRect(rectProgressBg, round, round, mPaint);
             }
-            canvas.drawRoundRect(rectProgressBg, round, round, mPaint);
+
         }
 
         private int dipToPx(int dip) {

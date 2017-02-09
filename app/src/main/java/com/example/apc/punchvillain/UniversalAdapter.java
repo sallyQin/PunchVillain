@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 
 /**
- * Created by 1 on 2016/12/13.
+ * Created by Sally on 2016/12/13.
  */
 public abstract class UniversalAdapter extends RecyclerView.Adapter<UniversalHolder> implements View.OnClickListener {  //通用适配器
 
@@ -52,9 +52,7 @@ public abstract class UniversalAdapter extends RecyclerView.Adapter<UniversalHol
     }
 
     public void onItemChanged(int position) { //具体需要点击itemView做什么操作
-
     }
-
 
 
 }

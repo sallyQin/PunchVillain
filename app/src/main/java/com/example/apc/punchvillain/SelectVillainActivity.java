@@ -1,10 +1,8 @@
 package com.example.apc.punchvillain;
 
-import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -127,7 +125,7 @@ public class SelectVillainActivity extends AppCompatActivity implements View.OnC
     }
 
 
-    /** 添加自定义 dialog**/
+    /** 添加订制 dialog**/
     private void createCustomList() {
         ArrayList<ListItemAdapter.DataHolder> dataHolders = initDataHolder();
         ListItemAdapter adapter = new ListItemAdapter(SelectVillainActivity.this, dataHolders);

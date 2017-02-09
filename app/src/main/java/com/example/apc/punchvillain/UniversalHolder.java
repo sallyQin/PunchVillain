@@ -6,7 +6,7 @@ import android.util.SparseArray;
 import android.view.View;
 
 /**
- * Created by 1 on 2017/1/10.
+ * Created by Sally on 2017/1/10.
  */
 
 public class UniversalHolder extends RecyclerView.ViewHolder {      // * 全通用 （通用Holder）

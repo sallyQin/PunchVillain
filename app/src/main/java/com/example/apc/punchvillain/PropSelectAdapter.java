@@ -9,7 +9,7 @@ import java.util.List;
 
 
 /**
- * Created by 1 on 2017/1/10.
+ * Created by Sally on 2017/1/10.
  */
 
 public class PropSelectAdapter extends UniversalAdapter  {  //recyclerView“选择道具”的适配器

@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by 1 on 2017/1/prop4.
+ * Created by Sally on 2017/1/prop4.
  */
 
 public class ListItemAdapter extends BaseAdapter {

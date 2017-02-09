@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Created by 1 on 2017/1/26.
+ * Created by Sally on 2017/1/26.
  */
 
 public class LampFrameLotteryView extends View { //“显示走马灯”的 自定义View

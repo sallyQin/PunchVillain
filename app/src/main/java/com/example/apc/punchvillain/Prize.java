@@ -6,9 +6,7 @@ import android.graphics.Rect;
 
 /**
  * 奖品
- * @author harry
- *
- */
+  */
 public class Prize {   //九宫格内容部分设置
 
 	private int id;  //奖品id
