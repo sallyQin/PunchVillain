@@ -18,15 +18,13 @@
 
 #####  5.模拟 九宫格抽财神签（附带`外圈小灯有走马灯效果`和 音效）。
 
+演示：
+![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/readme_display.gif)
 
-![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/1.png)
-![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/2.png)
-![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/3.png)
-
-![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/4.png)
-![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/5.png)
-![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/6.png)
+![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/readme1.png)
+![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/readme3.png)
+![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/readme6.png)
 
 
-![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/7.png)
-![image](https://github.com/sallyQin/PunchVillain/raw/master/app/src/main/res/raw/8.png)
+
+
